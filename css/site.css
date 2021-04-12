@@ -1,0 +1,42 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html,
+body {
+  height: 100%;
+}
+
+nav {
+  background-color: darkblue;
+}
+
+.foooter {
+  background-color: blueviolet;
+}
+
+.header {
+  background-color: darkgoldenrod;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url(/img/W2D3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    background-color: dimgray;
+  }
+
+  .hero {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.foooter>.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
