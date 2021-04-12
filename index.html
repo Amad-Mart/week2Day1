@@ -72,7 +72,17 @@
         </div>
       </form>
       <hr>
-      <p id="result"></p>
+      <table class="table table-striped" id="resultTable">
+        <thead class="thead-dark">
+          <tr>
+            <!-- colspan does: -->
+            <th colspan="5">Result</th>
+          </tr>
+        </thead>
+        <tbody id="resultsBody">
+          <!-- Data goes here -->
+        </tbody>
+      </table>
     </div>
   </main>
 
@@ -81,11 +91,21 @@
       <span class="text-muted">Place sticky footer content here.</span>
     </div>
   </footer>
+  <!-- wont render to page, its like a template -->
+  <template id="Data-Template">
+    <tr>
+      <td id="col1"></td>
+      <td id="col2"></td>
+      <td id="col3"></td>
+      <td id="col4"></td>
+      <td id="col5"></td>
+    </tr>
 
-   <!-- Optional JavaScript -->
-   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </template>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <div>
-   
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
