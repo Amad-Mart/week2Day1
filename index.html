@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>JS Basics - Loops and Templates</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -53,24 +53,26 @@
   </div>
 
   <!-- Begin page content -->
-  <main role="main">
+  <main role="main" class="flex-shrink-0">
     <div class="container">
-      <h1>Enter in Two Numbers and Do Math</h1>
+      <h1 class="pb-5">Enter in Two Numbers and Print Range</h1>
       <form>
         <div class="form-row">
           <div class="col-auto">
-            <label>Enter A Number:</label>
+            <label>Enter A Start Number:</label>
             <input type="number" id="numOne" value=1>
           </div>
-          <div class="col-auto">
-            <label>Enter A Number:</label>
-            <input type="number" id="numTwo" value=12>
+          <div class="col-auto text-right">
+            <label>Enter A Second Number:</label>
+            <input type="number" id="numTwo" value=100>
           </div>
           <div class="col text-right">
             <button id="submitBtn" type="button" class="btn btn-danger">Submit</button>
           </div>
         </div>
       </form>
+      <hr>
+      <p id="result"></p>
     </div>
   </main>
 
@@ -99,7 +101,7 @@
 
   <!-- Button events here -->
   <script>
-    document.getElementById("submitBtn").addEventListener("click", doMath);
+    document.getElementById("submitBtn").addEventListener("click", printNumbers);
   </script>
 </body>
 
