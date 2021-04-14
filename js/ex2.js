@@ -37,18 +37,18 @@ function displayData(numbers) {
         //returns an array of columns from the template
         let cols = dataRow.querySelectorAll("td");
         // loop over columns
-        for (let colIndex = 0; colIndex < array.length; colIndex++) {
-            let value = numbers[rowIndex + colIndex];
-            if (typeof value === "undefined") {
-                value = "";
+        for (let colIndex = 0; colIndex < cols.length; colIndex++) {
+            let myValue = numbers[rowIndex + colIndex];
+            if (typeof myValue === "undefined") {
+                myValue = "";
             }
             //major hint for fizzbuzz
             //makes even numbers bold
-            else if(value % 2 == 0){
+            else if (myValue % 2 == 0) {
                 cols[colIndex].classList.add("boldIt");
             }
             // sets td's content 
-            cols[colIndex].textContent = value;
+            cols[colIndex].textContent = myValue;
         }
         //add the row to the page
         resultsBody.appendChild(dataRow);
