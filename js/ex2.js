@@ -42,6 +42,11 @@ function displayData(numbers) {
             if (typeof value === "undefined") {
                 value = "";
             }
+            //major hint for fizzbuzz
+            //makes even numbers bold
+            else if(value % 2 == 0){
+                cols[colIndex].classList.add("boldIt");
+            }
             // sets td's content 
             cols[colIndex].textContent = value;
         }

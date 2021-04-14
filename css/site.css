@@ -16,6 +16,10 @@ nav {
 .header {
   background-color: darkgoldenrod;
 }
+.boldIt{
+  font-weight: bolder;
+  color: coral;
+}
 
 @media (min-width: 768px) {
   .header {
