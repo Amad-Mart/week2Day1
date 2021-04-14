@@ -22,13 +22,16 @@ function getRange(start, end) {
 function displayData(numbers) {
     const rowTemplate = document.getElementById("Data-Template");
     const resultsBody = document.getElementById("resultsBody");
+
     // this makes display numbers truly dynamic 
     //creates a clone of content in rowTemplate, selects all td elements, then gets length number
     let colCount = rowTemplate.content.cloneNode(true).querySelectorAll("td").length;
     //ImportNode does same as cloneNode except import can reach outside of file (if you have template file)
+
     //clears the table resultsBody
     resultsBody.innerHTML = "";
 
+    // loops over rows
     for (let rowIndex = 0; rowIndex < numbers.length; rowIndex += colCount) {
         let dataRow = rowTemplate.content.cloneNode(true);
         //returns an array of columns from the template
@@ -42,7 +45,7 @@ function displayData(numbers) {
             // sets td's content 
             cols[colIndex].textContent = value;
         }
+        //add the row to the page
         resultsBody.appendChild(dataRow);
-
     }
 }
